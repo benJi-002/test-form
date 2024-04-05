@@ -4,14 +4,14 @@ import styles from "../styles/DropZone.module.css";
 
 const DropZone = ({ data, dispatch, setValue, register}) => {
 
-  const [drop, setDrop] = useState();
+  // const [drop, setDrop] = useState();
 
-  useEffect(() => {
-    if (drop) {
-      console.log(...drop)
+  // useEffect(() => {
+  //   if (drop) {
+  //     console.log(...drop)
       // console.log(drop)
-    }
-  }, [drop])
+  //   }
+  // }, [drop])
 
   const handleDragEnter = (e) => {
     e.preventDefault();
@@ -47,7 +47,7 @@ const DropZone = ({ data, dispatch, setValue, register}) => {
     e.stopPropagation();
     
     setValue('files', e.dataTransfer.files)
-    setDrop(e.dataTransfer.files);
+    // setDrop(e.dataTransfer.files);
 
     let files = [...e.dataTransfer.files];
     
@@ -66,7 +66,7 @@ const DropZone = ({ data, dispatch, setValue, register}) => {
 
     setValue('files', e.target.files)
 
-    setDrop(e.target.files);
+    // setDrop(e.target.files);
 
     let files = [...e.target.files];
     

@@ -45,7 +45,7 @@ const CustomForm = () => {
 
   const onSubmit = (formData) => {
 
-    formData = {...formData, files: state.fileList}
+    formData = {...formData, files: data.fileList}
     console.log(formData);
 
     dispatch({ type: "CLEAN_FILE_LIST" });
