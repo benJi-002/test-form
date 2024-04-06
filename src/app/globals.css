@@ -2,19 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background-color: 3, 7, 18, 0.72;
-}
-
 body {
-  margin-top: 85px;
-  background: rgba(var(--background-color)) !important;
-  display: flex;
-  justify-content: center;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+  @apply mt-[65px] !bg-background flex justify-center
 }

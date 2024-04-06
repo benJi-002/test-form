@@ -36,7 +36,8 @@ module.exports = {
         'check-gray': '#6B7280',
         'purple': '#4F46E5',
         'hover-purple': '#6366F1',
-        'error': '#FF2525'
+        'error': '#FF2525',
+        'background': 'rgba(3, 7, 18, 0.72)'
       },
       rotate: {
         'arrow': ''
