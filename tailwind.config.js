@@ -6,9 +6,6 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    data: {
-      expanded: 'expanded~="true"'
-    },
     extend: {
       fontFamily: {
         inherit: 'inherit'
@@ -39,9 +36,6 @@ module.exports = {
         'error': '#FF2525',
         'background': 'rgba(3, 7, 18, 0.72)'
       },
-      rotate: {
-        'arrow': ''
-      }
     }
   },
   plugins: [],
