@@ -1,0 +1,103 @@
+.mainContainer {
+  @apply p-[40px] max-w-[640px] bg-white rounded-[32px] relative
+}
+
+.switchableDropZone {
+  @apply p-[40px] w-full h-full z-10 left-0 top-0 overflow-hidden bg-white rounded-[32px] absolute text-center
+}
+
+.dropZoneDashes {
+  @apply z-20 w-full h-full rounded-[24px] bg-border-dashed content-center
+}
+
+.dropZoneTitle {
+  @apply text-black text-2xl font-medium
+}
+
+.dropZoneSubtitle {
+  @apply text-gray text-xl mt-4
+}
+
+.title {
+  @apply text-black text-3xl font-semibold
+}
+
+.subtitle {
+  @apply mt-4 text-gray text-xl font-normal
+}
+
+.fieldset {
+  @apply block w-full h-auto
+}
+
+.input {
+  @apply border-border-gray focus-visible:border-border-gray outline-none bg-input-gray w-full border border-solid  rounded h-16 pl-5 pr-5 text-black text-lg font-medium placeholder:text-light-gray placeholder:font-normal font-inherit 
+}
+
+.errorInput {
+  @apply border-error focus-visible:border-error outline-none bg-input-gray w-full border border-solid  rounded h-16 pl-5 pr-5 text-black text-lg font-medium placeholder:text-light-gray placeholder:font-normal font-inherit
+}
+
+.errorMessage {
+  @apply text-error font-normal text-base mt-1 hidden
+}
+
+.selectWrapper {
+  @apply w-full mt-4 h-max
+}
+
+.selectRightSection {
+  @apply mr-[25px] w-auto
+}
+
+.dropdown {
+  @apply rounded p-0 h-max bg-input-gray
+}
+
+.options {
+  @apply rounded  m-0 
+}
+
+.option {
+  @apply py-[17.5px] px-6 w-full m-0 overflow-hidden border-b border-border-gray rounded-none hover:bg-inherit last-of-type:border-none text-light-gray text-lg font-normal hover:text-black
+}
+
+.option>svg {
+  @apply hidden
+}
+
+.checkWrapper {
+  @apply mt-6 flex relative gap-4 items-center
+}
+
+.nativeCheck {
+  @apply w-6 h-6 flex absolute cursor-pointer z-10 opacity-0
+}
+
+.checked {
+  @apply hidden
+}
+
+input:checked ~ div>.checked {
+  @apply block
+}
+
+input:checked ~ .checkFrame {
+  @apply border-purple
+}
+
+.checkFrame {
+  @apply w-6 h-6 border border-border-gray rounded-[8px] flex justify-center items-center
+}
+
+.errorCheck {
+  @apply w-6 h-6 border border-error rounded-[8px] flex justify-center items-center
+}
+
+.checkLabel {
+  @apply text-check-gray text-lg font-normal
+}
+
+.submitButton {
+  @apply block w-full mt-[25px] bg-purple rounded-full h-16 text-lg text-white font-medium hover:bg-hover-purple
+}

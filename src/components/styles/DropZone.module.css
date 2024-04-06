@@ -1,63 +1,31 @@
 .dropzone {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  border: dashed 3px #ccc;
-  border-radius: 1rem;
-  padding: 2rem;
+  @apply mt-4 flex justify-between
 }
 
-.active {
-  border: dashed 3px dodgerblue;
+.title {
+  @apply text-base text-black font-medium
 }
 
-.uploadMessage h3 {
-  margin-top: 1rem;
+.subtitle {
+  @apply text-sm text-light-gray font-normal mt-3
 }
 
-.files {
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  height: 1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute !important;
-  white-space: nowrap;
-  width: 1px;
+.wrapper {
+  @apply w-[310px]
 }
 
-.files + label {
-  margin-top: 1rem;
-  background-color: #0d6efd;
-  border-radius: 4rem;
-  color: #fff;
-  cursor: pointer;
-  display: inline-block;
-  padding: 0.25rem 0.75rem;
-  text-align: center;
-  user-select: none;
+.fileInput {
+  @apply border-none overflow-hidden p-0 whitespace-nowrap h-0 w-0 !absolute
 }
 
-.files + label:focus,
-.files + label:hover {
-  background-color: #0a58ca;
-  color: #fff;
+.fileWindow {
+  @apply bg-border-dashed min-w-[234px] h-[120px] cursor-pointer flex justify-center items-center
 }
 
-.files + label:focus {
-  outline: 1px dotted #fff;
+.fileWindowError {
+  @apply bg-error-border-dashed min-w-[234px] h-[120px] cursor-pointer flex justify-center items-center
 }
 
-.uploadBtn {
-  width: auto;
-  color: white;
-  text-transform: uppercase;
-  margin: 2rem;
-  background-color: #0d6efd;
-  border-radius: 4rem;
-  cursor: pointer;
-  padding: 0.75rem;
-  text-align: center;
+.errorMessage {
+  @apply text-error font-normal text-base mt-1 hidden
 }

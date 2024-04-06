@@ -1,15 +1,15 @@
 .fileList {
-  display: flex;
-  margin-top: 1rem;
-  gap: 1rem;
-  width: 400px;
+  @apply mt-3 flex flex-wrap gap-2
 }
 
-.fileContainer {
-  flex-direction: column;
-  align-items: center;
+.file {
+  @apply min-h-6 flex bg-input-gray rounded-full py-0.5 px-[6px] items-center justify-between gap-1 text-sm text-black font-normal cursor-pointer
 }
 
-.fileName {
-  margin-left: 2rem;
+.fileIcon {
+  @apply w-[10.6px] table table pointer-events-none
+}
+
+.deleteIcon {
+  @apply w-[8.3px] table pointer-events-none
 }
