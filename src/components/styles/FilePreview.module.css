@@ -3,6 +3,8 @@
 }
 
 .file {
+  overflow-wrap: anyware;
+  word-break: break-word;
   @apply min-h-6 flex bg-input-gray rounded-full py-0.5 px-[6px] items-center justify-between gap-1 text-sm text-black font-normal cursor-pointer
 }
 
