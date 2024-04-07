@@ -3,5 +3,9 @@
 @tailwind utilities;
 
 body {
-  @apply mt-[65px] !bg-background flex justify-center
+  @apply !bg-background grid grid-flow-row-dense
+}
+
+main {
+  @apply mx-[auto] px-10
 }

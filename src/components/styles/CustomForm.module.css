@@ -1,5 +1,5 @@
 .mainContainer {
-  @apply p-[40px] max-w-[640px] bg-white rounded-[32px] relative
+  @apply mt-[65px] p-[40px] max-w-[640px] bg-white rounded-[32px] relative shrink
 }
 
 .switchableDropZone {
