@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply !bg-background grid grid-flow-row-dense
+  @apply !bg-background flex
 }
 
 main {
